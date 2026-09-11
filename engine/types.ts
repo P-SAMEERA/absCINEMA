@@ -52,6 +52,7 @@ export interface StoryboardFrame {
   cameraMotion: 'slow_push_in' | 'pan_left' | 'pan_right' | 'tilt_up' | 'static_wide';
   caption?: string;
   isGenerating?: boolean;
+  source?: 'ai_generated';
 }
 
 export interface SceneAmbienceGuess {
