@@ -54,11 +54,10 @@ const ResultBlock: React.FC<{ result: ToolResult }> = ({ result }) => {
 
   return (
     <div
-      className={`mt-2 rounded-lg border text-xs font-mono overflow-hidden ${
-        result.status === 'error'
+      className={`mt-2 rounded-lg border text-xs font-mono overflow-hidden ${result.status === 'error'
           ? 'border-rose-500/30 bg-rose-950/20'
           : 'border-emerald-500/20 bg-emerald-950/10'
-      }`}
+        }`}
     >
       <button
         onClick={() => setOpen((v) => !v)}
@@ -133,6 +132,9 @@ export const McpHubDrawer: React.FC<McpHubDrawerProps> = ({
       // Apply frame to scene
       onUpdateSceneFrame(sceneIdx, {
         id: `mcp-frame-${scene.id}`,
+        sceneId: scene.id,
+        sceneNumber: scene.sceneNumber,
+        prompt: data.caption ?? '',
         imageUrl: data.imageUrl,
         caption: data.caption,
         cameraMotion: data.cameraMotion as StoryboardFrame['cameraMotion'],

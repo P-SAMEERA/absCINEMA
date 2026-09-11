@@ -49,10 +49,15 @@ export interface StoryboardFrame {
   sceneNumber: number;
   prompt: string;
   imageUrl: string;
-  cameraMotion: 'slow_push_in' | 'pan_left' | 'pan_right' | 'tilt_up' | 'static_wide';
+  cameraMotion:
+    | 'slow_push_in'
+    | 'pan_left'
+    | 'pan_right'
+    | 'tilt_up'
+    | 'static_wide';
   caption?: string;
   isGenerating?: boolean;
-  source?: 'ai_generated';
+  source?: 'ai_generated' | 'mcp_generated';
 }
 
 export interface SceneAmbienceGuess {
