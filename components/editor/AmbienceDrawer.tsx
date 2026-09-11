@@ -80,7 +80,7 @@ export const AmbienceDrawer: React.FC<AmbienceDrawerProps> = ({
       {/* Description & Action */}
       <div className="bg-cinema-900/60 border border-white/5 rounded-xl p-4 mb-6">
         <p className="text-xs text-cinema-300 leading-relaxed mb-4">
-          absCinema analyzes your screenplay's locations, times, and sensory action lines to automatically schedule the exact acoustic environment and spot sound effects.
+          absCinema analyzes your screenplay&apos;s locations, times, and sensory action lines to automatically schedule the exact acoustic environment and spot sound effects.
         </p>
 
         <button
@@ -145,11 +145,10 @@ export const AmbienceDrawer: React.FC<AmbienceDrawerProps> = ({
                 <button
                   onClick={() => handleTogglePreview(currentAmb)}
                   title={isPreviewing ? 'Stop Audition' : 'Preview Soundscape'}
-                  className={`p-2 rounded-lg border transition-colors ${
-                    isPreviewing
+                  className={`p-2 rounded-lg border transition-colors ${isPreviewing
                       ? 'bg-cinema-gold text-black border-cinema-gold'
                       : 'bg-white/5 hover:bg-white/10 text-cinema-300 border-white/10'
-                  }`}
+                    }`}
                 >
                   {isPreviewing ? <Square className="w-3.5 h-3.5 fill-current" /> : <Volume2 className="w-3.5 h-3.5" />}
                 </button>
