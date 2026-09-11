@@ -3,7 +3,7 @@
 import React from 'react';
 import { CinemaDocument } from '../../engine/types';
 import { DIRECTOR_PRESETS } from '../../engine/director/presets';
-import { Film, Play, Edit3, Trash2, Plus, Clock, Users, Sparkles } from 'lucide-react';
+import { Film, Play, Edit3, Trash2, Plus, Users, Sparkles } from 'lucide-react';
 
 interface FilmLibraryProps {
   films: CinemaDocument[];

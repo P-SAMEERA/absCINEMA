@@ -18,8 +18,8 @@ async function callMcpServer(tool: string, args: Record<string, unknown>): Promi
 
     let buffer = '';
     let initialized = false;
-    let initId = 1;
-    let callId = 2;
+    const initId = 1;
+    const callId = 2;
 
     const sendMsg = (obj: unknown) => {
       child.stdin.write(JSON.stringify(obj) + '\n');
